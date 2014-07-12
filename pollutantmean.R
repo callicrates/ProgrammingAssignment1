@@ -17,7 +17,7 @@ pollutantmean <- function(directory, pollutant, id = 1:332) {
 
     loadSingleFile <- function(fileId) {
         filename <- sprintf("%s/%03d.csv", directory, as.integer(fileId))
-        message(sprintf("Reading data table from %s", filename))
+#        message(sprintf("Reading data table from %s", filename))
         read.csv(filename, header=TRUE)
     }
 
